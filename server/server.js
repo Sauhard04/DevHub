@@ -1007,11 +1007,11 @@ if (env === 'production') {
 }
 
 // Start the server
-const PORT = currentConfig.port;
-server.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+const port = process.env.PORT || 5000;
+server.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
   console.log(`Environment: ${env}`);
 });
 
 // Export the Express app for Vercel
-module.exports = app; 
+module.exports = app;

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.96eb9587.css",
+    "main.js": "/static/js/main.971234fd.js",
+    "static/media/madhu.jpg": "/static/media/madhu.a265e9bc34e09df5cc80.jpg",
+    "static/media/bg.png": "/static/media/bg.615383da7939441bf11f.png",
+    "static/media/prashant.jpg": "/static/media/prashant.e0666d00d3d61d6cd4c2.jpg",
+    "static/media/sauhard.jpg": "/static/media/sauhard.2c5eca11b937a6399a44.jpg",
+    "static/media/sachin.jpg": "/static/media/sachin.5887078dfebfd23672d8.jpg",
+    "static/media/rahul.jpg": "/static/media/rahul.5ce896e4d3a3475050b4.jpg",
+    "index.html": "/index.html",
+    "main.96eb9587.css.map": "/static/css/main.96eb9587.css.map",
+    "main.971234fd.js.map": "/static/js/main.971234fd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96eb9587.css",
+    "static/js/main.971234fd.js"
+  ]
+}
