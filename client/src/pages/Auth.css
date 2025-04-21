@@ -1,0 +1,150 @@
+.auth-page {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 100%;
+  animation: fadeIn 0.6s ease-out;
+  background-color: rgba(255, 255, 255, 0.059);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #93bbe3;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #7ba9d7;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid rgba(221, 221, 221, 0.2);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #7ba9d7;
+  box-shadow: 0 0 0 2px rgba(139, 180, 230, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.form-actions {
+  margin-top: 2rem;
+}
+
+.form-actions .btn {
+  width: 100%;
+  padding: 0.75rem;
+}
+
+.auth-redirect {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.auth-redirect a {
+  color: #93bbe3;
+  font-weight: 500;
+}
+
+.auth-redirect a:hover {
+  text-decoration: underline;
+  color: #b4d1ee;
+}
+
+/* Profile image preview */
+.profile-image-preview {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 1rem auto;
+  display: block;
+  border: 3px solid rgba(139, 180, 230, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.profile-image-preview:hover {
+  transform: scale(1.05);
+  border-color: #7ba9d7;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.custom-file-upload {
+  display: block;
+  width: 100%;
+  padding: 0.9rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(221, 221, 221, 0.2);
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.custom-file-upload:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-color: #7ba9d7;
+}
+
+input[type="file"] {
+  display: none;
+}

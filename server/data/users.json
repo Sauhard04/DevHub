@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1743791923972",
+    "name": "test",
+    "email": "sauhard.kaushik_cs22@gla.ac.in",
+    "username": "Sauhard",
+    "github": "https://github.com/Sauhard04",
+    "password": "$2a$10$VU6MPGnfa8aTzlTnQxwmaeDy0l1FEjbjLMXSacIj7rbw.CErh1EMO",
+    "profileImage": "/uploads/profileImage-1743791923774-688658774.jpeg",
+    "createdAt": "2025-04-04T18:38:43.972Z"
+  },
+  {
+    "id": "1743855798729",
+    "name": "Rahul Yaduvanshi",
+    "email": "rahul.yaduvanshi_cs22@gla.ac.in",
+    "username": "Rahul",
+    "github": "https://github.com/rahulglacs",
+    "password": "$2a$10$Hu2c3LzFTNJSqJicveP5te3HXU2qZoSxZf.hffmr9YpJNXFdM/6au",
+    "profileImage": "/uploads/profileImage-1743855798533-537684333.jpg",
+    "createdAt": "2025-04-05T12:23:18.729Z"
+  },
+  {
+    "id": "1743856047518",
+    "name": "Sachin",
+    "email": "sachin.kumar_cs22@gla.ac.in",
+    "username": "Sachin",
+    "github": "https://github.com/sachinGlacs",
+    "password": "$2a$10$qsSYfiOjDvhez5ztgQC7yezQvJqwdva5o2tWd7nc7XCRcup/wIsy6",
+    "profileImage": "/uploads/profileImage-1743856047366-18540566.jpg",
+    "createdAt": "2025-04-05T12:27:27.518Z"
+  }
+]

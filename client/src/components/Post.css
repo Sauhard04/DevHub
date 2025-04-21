@@ -1,0 +1,336 @@
+.post-item {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.post-item:hover {
+  transform: translateY(-3px);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.post-user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.post-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #4a69bd;
+}
+
+.post-username {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e6e6e6;
+}
+
+.post-time {
+  font-size: 0.85rem;
+  color: #8f9cb3;
+}
+
+.post-content {
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+  color: #e6e6e6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.post-image-container {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.github-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.github-repo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: #93bbe3;
+  font-size: 0.95rem;
+  transition: background-color 0.2s;
+}
+
+.github-repo-link:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.github-icon {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.readme-preview {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.readme-text {
+  margin: 0;
+  padding: 0;
+  font-family: "Consolas", "Monaco", "Courier New", monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #e6e6e6;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow: hidden;
+  background: none;
+}
+
+.more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #93bbe3;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.more-link:hover {
+  color: #b4d1ee;
+  text-decoration: underline;
+}
+
+.readme-loading {
+  padding: 0.75rem;
+  text-align: center;
+  color: #8f9cb3;
+  font-size: 0.9rem;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 6px;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.readme-error {
+  padding: 0.75rem;
+  text-align: center;
+  color: #ff6b81;
+  font-size: 0.9rem;
+  background-color: rgba(255, 0, 0, 0.05);
+  border-radius: 6px;
+  border: 1px dashed rgba(255, 0, 0, 0.15);
+}
+
+.post-stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #8f9cb3;
+}
+
+.likes-count {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.comments-count {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.comments-count:hover {
+  color: #e6e6e6;
+}
+
+.stats-icon {
+  color: #93bbe3;
+}
+
+.post-actions {
+  display: flex;
+  gap: 1rem;
+  padding-top: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.post-action-btn {
+  background: none;
+  border: none;
+  color: #8f9cb3;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, color 0.2s;
+  flex: 1;
+}
+
+.post-action-btn.active {
+  color: #93bbe3;
+}
+
+.action-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.action-text {
+  margin-left: 3px;
+}
+
+.post-action-btn:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #e6e6e6;
+}
+
+.comments-section {
+  margin-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+}
+
+.comments-list {
+  margin-bottom: 1rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.comment-item {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.comment-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comment-content {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.comment-author {
+  font-weight: 600;
+  color: #e6e6e6;
+}
+
+.comment-time {
+  color: #8f9cb3;
+  font-size: 0.8rem;
+}
+
+.comment-text {
+  margin: 0;
+  line-height: 1.4;
+  color: #e6e6e6;
+}
+
+.comment-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.comment-input {
+  flex: 1;
+  padding: 0.7rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #e6e6e6;
+  font-size: 0.9rem;
+}
+
+.comment-input:focus {
+  outline: none;
+  border-color: #93bbe3;
+  box-shadow: 0 0 0 2px rgba(147, 187, 227, 0.2);
+}
+
+.comment-submit-btn {
+  background-color: #4a69bd;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.comment-submit-btn:hover {
+  background-color: #3c5aa9;
+}
+
+.comment-submit-btn:disabled {
+  background-color: #3c5aa9;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.post-error {
+  background-color: rgba(220, 53, 69, 0.15);
+  color: #ff6b81;
+  border: 1px solid rgba(220, 53, 69, 0.3);
+  padding: 0.6rem;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  text-align: center;
+}

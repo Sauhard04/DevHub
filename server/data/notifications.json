@@ -1,0 +1,84 @@
+[
+  {
+    "id": "1745226275501",
+    "userId": "1743856047518",
+    "type": "new_connection",
+    "message": "test connected with you",
+    "data": {
+      "userId": "1743791923972",
+      "userName": "test",
+      "userImage": "/uploads/profileImage-1743791923774-688658774.jpeg"
+    },
+    "read": false,
+    "createdAt": "2025-04-21T09:04:35.501Z"
+  },
+  {
+    "id": "1744218106373",
+    "userId": "1743856047518",
+    "type": "connection_accepted",
+    "message": "test accepted your connection request",
+    "data": {
+      "userId": "1743791923972",
+      "userName": "test",
+      "userImage": "/uploads/profileImage-1743791923774-688658774.jpeg"
+    },
+    "read": false,
+    "createdAt": "2025-04-09T17:01:46.373Z"
+  },
+  {
+    "id": "1744218104981",
+    "userId": "1743855798729",
+    "type": "connection_request",
+    "message": "test sent you a connection request",
+    "data": {
+      "requestId": "1744218104979",
+      "userId": "1743791923972",
+      "userName": "test",
+      "userImage": "/uploads/profileImage-1743791923774-688658774.jpeg"
+    },
+    "read": false,
+    "createdAt": "2025-04-09T17:01:44.981Z"
+  },
+  {
+    "id": "1744218092193",
+    "userId": "1743855798729",
+    "type": "connection_request",
+    "message": "Sachin sent you a connection request",
+    "data": {
+      "requestId": "1744218092192",
+      "userId": "1743856047518",
+      "userName": "Sachin",
+      "userImage": "/uploads/profileImage-1743856047366-18540566.jpg"
+    },
+    "read": false,
+    "createdAt": "2025-04-09T17:01:32.193Z"
+  },
+  {
+    "id": "1744218090760",
+    "userId": "1743791923972",
+    "type": "connection_request",
+    "message": "Sachin sent you a connection request",
+    "data": {
+      "requestId": "1744218090758",
+      "userId": "1743856047518",
+      "userName": "Sachin",
+      "userImage": "/uploads/profileImage-1743856047366-18540566.jpg"
+    },
+    "read": false,
+    "createdAt": "2025-04-09T17:01:30.760Z"
+  },
+  {
+    "id": "1744215776112",
+    "userId": "1743791923972",
+    "type": "like",
+    "message": "Sachin liked your post",
+    "data": {
+      "postId": "1744088468042",
+      "likerName": "Sachin",
+      "likerImage": "/uploads/profileImage-1743856047366-18540566.jpg",
+      "postContent": "nbtrgw"
+    },
+    "read": false,
+    "createdAt": "2025-04-09T16:22:56.112Z"
+  }
+]
