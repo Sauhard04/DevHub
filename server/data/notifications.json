@@ -1,5 +1,19 @@
 [
   {
+    "id": "1745428964859",
+    "userId": "1743791923972",
+    "type": "like",
+    "message": "Sachin liked your post",
+    "data": {
+      "postId": "1744287285335",
+      "likerName": "Sachin",
+      "likerImage": "/uploads/profileImage-1743856047366-18540566.jpg",
+      "postContent": "hi"
+    },
+    "read": false,
+    "createdAt": "2025-04-23T17:22:44.859Z"
+  },
+  {
     "id": "1745226275501",
     "userId": "1743856047518",
     "type": "new_connection",

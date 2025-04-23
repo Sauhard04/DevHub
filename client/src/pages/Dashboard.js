@@ -3,6 +3,7 @@ import { fetchPosts, createPost } from '../utils/api';
 import { AuthContext } from '../context/AuthContext';
 import PostForm from '../components/PostForm';
 import Feed from '../components/Feed';
+import socket from '../utils/socket';
 import './Dashboard.css';
 
 const Dashboard = () => {
@@ -11,7 +12,7 @@ const Dashboard = () => {
   const [error, setError] = useState('');
   const { currentUser } = useContext(AuthContext);
 
-  // Load posts on mount
+  // Load posts on mount and set up socket listeners
   useEffect(() => {
     const loadPosts = async () => {
       try {
@@ -26,6 +27,25 @@ const Dashboard = () => {
     };
 
     loadPosts();
+
+    // Listen for real-time post updates
+    socket.on('post_updated', (updatedPost) => {
+      setPosts(prevPosts => {
+        const exists = prevPosts.some(post => post.id === updatedPost.id);
+        if (exists) {
+          // Replace the post
+          return prevPosts.map(post => post.id === updatedPost.id ? updatedPost : post);
+        } else {
+          // New post (unlikely for update, but just in case)
+          return [updatedPost, ...prevPosts];
+        }
+      });
+    });
+
+    // Cleanup on unmount
+    return () => {
+      socket.off('post_updated');
+    };
   }, []);
 
   // Handle post submission

@@ -551,6 +551,9 @@ app.put('/api/posts/:id/like', auth, (req, res) => {
     // Save updated posts
     savePosts(posts);
 
+    // Emit real-time update to all clients
+    io.emit('post_updated', post);
+
     res.json(post);
   } catch (error) {
     console.error('Like post error:', error);
@@ -593,6 +596,9 @@ app.post('/api/posts/:id/comment', auth, (req, res) => {
 
     // Save updated posts
     savePosts(posts);
+
+    // Emit real-time update to all clients
+    io.emit('post_updated', post);
 
     // Create notification for post owner if the commenter is not the post owner
     if (user.id !== post.user.id) {
